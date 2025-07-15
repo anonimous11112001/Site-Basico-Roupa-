@@ -4,39 +4,45 @@
 <head>
   <meta name="description" content="Loja com produtos exclusivos e estilo rústico. Confira nosso catálogo.">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-
   <title>SUA LOJA</title>
-
   <link rel="stylesheet" href="style.css">
-
-
   <script defer src="script.js"></script>
 </head>
 
-<body>
+<header>
   <nav class="navbar">
     <div class="logo">SUA LOJA</div>
     <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação">&#9776;</button>
     <ul class="nav-links" id="nav-links">
       <li><a href="#home">Início</a></li>
       <li><a href="#produtos">Produtos</a></li>
+      <li><a href="#clientes">Clientes</a></li>
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
   </nav>
+</header>
 
+<body>
   <section id="home" class="imagem-loja">
     <img src="img/loja-dentro1_upscayl_5x_ultramix_balanced.png" alt="Interior da loja">
   </section>
 
   <section id="produtos" class="secao-produtos">
     <h2 class="animar-esquerda">Nossos Produtos</h2>
+
+    <div class="filtros-categorias">
+      <button class="filtro-btn ativo" data-categoria="todos">Todos</button>
+      <button class="filtro-btn" data-categoria="conjunto-promo">Conjuntos Na Promoção!</button>
+      <button class="filtro-btn" data-categoria="vestidos">Vestidos!</button>
+      <button class="filtro-btn" data-categoria="roupas-verao">Looks de Verão!</button>
+    </div>
     <div class="grid-produtos">
+
       <!-- Seus cards aqui -->
-
-
       <!-- Card 1 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <div class="card-produto" data-categoria="conjunto-promo" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/produto1.jpeg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/modelo1.jpg" alt="Produto 1 modelo" class="imagem-principal">
@@ -52,8 +58,10 @@
         </div>
       </div>
 
+
       <!-- Card 2 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <div class="card-produto" data-categoria="vestidos" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/vestido-rosas1.jpeg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/vestido-rosas2.jpeg" alt="Produto 1 modelo" class="imagem-principal">
@@ -62,6 +70,7 @@
           <button class="btn-proximo">›</button>
         </div>
 
+
         <div class="info-produto">
           <h3>Vestido Florido</h3>
           <p class="preco">R$ 199,50</p>
@@ -69,8 +78,10 @@
         </div>
       </div>
 
+
       <!-- Card 3 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <div class="card-produto" data-categoria="vestidos" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/vestido-branco1.jpeg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/vestido-branco2.jpeg" alt="Produto 1 modelo" class="imagem-principal">
@@ -79,6 +90,7 @@
           <button class="btn-proximo">›</button>
         </div>
 
+
         <div class="info-produto">
           <h3>Conjunto Alfaiataria Zipper</h3>
           <p class="preco">R$ 169,90</p>
@@ -86,8 +98,10 @@
         </div>
       </div>
 
+
       <!-- Card 4 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <div class="card-produto" data-categoria="conjunto-promo" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/conjunto-branco1.jpeg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/conjunto-branco2.jpeg" alt="Produto 1 modelo" class="imagem-principal">
@@ -95,14 +109,17 @@
           <button class="btn-proximo">›</button>
         </div>
 
+
         <div class="info-produto">
           <h3>Conjunto Alfaiataria Botão</h3>
           <p class="preco">R$ 99,90</p>
           <a href="#" class="btn-comprar">Comprar</a>
         </div>
       </div>
+
       <!-- Card 5 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <div class="card-produto" data-categoria="conjunto-promo" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/conjunto-short1.jpeg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/conjunto-short2.jpeg" alt="Produto 1 modelo" class="imagem-principal">
@@ -117,8 +134,10 @@
         </div>
       </div>
 
+
       <!-- Card 6 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <div class="card-produto" data-categoria="conjunto-promo" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/conjunto-verde1.jpeg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/conjunto-verde2.jpeg" alt="Produto 1 modelo" class="imagem-principal">
@@ -133,8 +152,10 @@
         </div>
       </div>
 
+
       <!-- Card 7 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <div class="card-produto" data-categoria="conjunto-promo" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/conjunto-rosa1.jpeg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/conjunto-rosa2.jpeg" alt="Produto 1 modelo" class="imagem-principal">
@@ -151,7 +172,8 @@
       </div>
 
       <!-- Card 8 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <div class="card-produto" data-categoria="conjunto-promo" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/short-camisa1.jpeg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/short-camisa2.jpeg" alt="Produto 1 modelo" class="imagem-principal">
@@ -166,8 +188,10 @@
         </div>
       </div>
 
+
       <!-- Card 9 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <div class="card-produto" data-categoria="conjunto-promo" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/camisa-listrada1.jpeg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/camisa-listrada2.jpeg" alt="Produto 1 modelo" class="imagem-principal">
@@ -182,8 +206,11 @@
         </div>
       </div>
 
+
+
       <!-- Card 10 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <div class="card-produto" data-categoria="roupas-verao" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/marrom1.jpeg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/marrom2.jpeg" alt="Produto 1 modelo" class="imagem-principal">
@@ -198,8 +225,10 @@
         </div>
       </div>
 
+
       <!-- Card 11 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <div class="card-produto" data-categoria="vestidos" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/vestido-tubinho3.jpeg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/vestido-tubinho2.jpeg" alt="Produto 1 modelo" class="imagem-principal">
@@ -215,12 +244,13 @@
         </div>
       </div>
 
+
       <!-- Card 12 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <div class="card-produto" data-categoria="conjunto-promo" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/roupa-estilosa1.jpeg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/roupa-estilosa2.jpeg" alt="Produto 1 modelo" class="imagem-principal">
-
           <button class="btn-anterior">‹</button>
           <button class="btn-proximo">›</button>
         </div>
@@ -232,8 +262,10 @@
         </div>
       </div>
 
+
       <!-- Card 13 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <div class="card-produto" data-categoria="conjunto-promo" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/anos-20002.jpeg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/anos-20001.jpeg" alt="Produto 1 modelo" class="imagem-principal">
@@ -248,8 +280,10 @@
         </div>
       </div>
 
+
       <!-- Card 14 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <div class="card-produto" data-categoria="conjunto-promo" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/anos-20004.jpeg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/anos-20003.jpeg" alt="Produto 1 modelo" class="imagem-principal">
@@ -265,7 +299,8 @@
       </div>
 
       <!-- Card 15 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <div class="card-produto" data-categoria="vestidos" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/vestido2.jpeg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/vestido1.jpeg" alt="Produto 1 modelo" class="imagem-principal">
@@ -280,8 +315,10 @@
         </div>
       </div>
 
+
       <!-- Card 16 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <div class="card-produto" data-categoria="roupas-verao" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/cropedd-amarelo1.jpeg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/cropedd-amarelo2.jpeg" alt="Produto 1 modelo" class="imagem-principal">
@@ -297,8 +334,10 @@
         </div>
       </div>
 
+
       <!-- Card 17 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <div class="card-produto" data-categoria="roupas-verao" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/saida-praia2.jpeg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/saida-praia1.jpeg" alt="Produto 1 modelo" class="imagem-principal">
@@ -313,8 +352,10 @@
         </div>
       </div>
 
+
       <!-- Card 18 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <div class="card-produto" data-categoria="roupas-verao" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/saida-praia4.jpeg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/saida-praia3.jpeg" alt="Produto 1 modelo" class="imagem-principal">
@@ -329,8 +370,10 @@
         </div>
       </div>
 
+
       <!-- Card 19 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <div class="card-produto" data-categoria="conjunto-promo" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/conjunto-academia1.jpg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/conjunto-academia2.jpg" alt="Produto 1 modelo" class="imagem-principal">
@@ -345,8 +388,10 @@
         </div>
       </div>
 
-       <!-- Card 20 -->
-      <div class="card-produto" data-delay="6.8s">
+
+      <!-- Card 20 -->
+
+      <div class="card-produto" data-categoria="conjunto-promo" data-delay="6.8s">
         <div class="carousel-imagem">
           <img src="img/conjunto-inverno1.jpg" alt="Produto 1" class="imagem-principal ativo">
           <img src="img/conjunto-inverno2.jpg" alt="Produto 1 modelo" class="imagem-principal">
@@ -355,23 +400,148 @@
         </div>
 
         <div class="info-produto">
-          <h3>Conjunto Academia Inverno</h3>
+          <h3>Conjunto Inverno</h3>
           <p class="preco">R$ 239,90</p>
           <a href="#" class="btn-comprar">Comprar</a>
         </div>
       </div>
-
-      
-      
     </div>
   </section>
 
+  <section id="clientes" class="secao-comentarios">
+    <h2 class="animar-esquerda">O que dizem sobre nós</h2>
+    <div class="comentarios-container">
+
+      <!-- Comentário 1 -->
+      <div class="card-comentario">
+        <img src="img/comentario1.jpg" alt="Cliente 1">
+        <h3>Ana Souza</h3>
+        <p>Amei a qualidade das roupas e o atendimento foi incrível!</p>
+        <div class="imagem-extra">
+          <img src="img/exemplo1.jpg" alt="Imagem extra Ana">
+        </div>
+      </div>
+
+      <!-- Comentário 2 -->
+      <div class="card-comentario">
+        <img src="img/comentario2.jpg" alt="Cliente 2">
+        <h3>Bruna Lima</h3>
+        <p>Peças únicas e que combinam com meu estilo. Super recomendo!</p>
+        <div class="imagem-extra">
+          <img src="img/exemplo2.jpg" alt="Imagem extra Ana">
+        </div>
+      </div>
+
+      <!-- Comentário 3 -->
+      <div class="card-comentario">
+        <img src="img/comentario3.jpg" alt="Cliente 3">
+        <h3>Camila Rocha</h3>
+        <p>Entrega rápida e muito capricho na embalagem.</p>
+        <div class="imagem-extra">
+          <img src="img/exemplo3.jpg" alt="Imagem extra Ana">
+        </div>
+      </div>
+
+      <!-- Comentário 4 -->
+      <div class="card-comentario">
+        <img src="img/comentario4.jpg" alt="Cliente 4">
+        <h3>Daniela Alves</h3>
+        <p>As promoções são ótimas e as roupas têm um acabamento perfeito!</p>
+        <div class="imagem-extra">
+          <img src="img/exemplo4.jpg" alt="Imagem extra Ana">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="secao-sobre">
+    <div class="sobre-container">
+      <div class="sobre-texto animar-esquerda">
+        <h2>Sobre a Nossa Loja</h2>
+        <p>
+          Fundada com amor e dedicação, nossa loja nasceu do desejo de oferecer peças que combinam estilo, conforto e
+          autenticidade. Cada detalhe é pensado com carinho para valorizar a beleza única de cada cliente.
+        </p>
+        <p>
+          Trabalhamos com curadoria especial, priorizando qualidade, bom gosto e um atendimento que acolhe. Venha fazer
+          parte dessa experiência!
+        </p>
+      </div>
+      <div class="sobre-imagem animar-direita">
+        <img src="img/sobre-loja.png" alt="Interior da loja ou equipe">
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="secao-contato">
+    <h2 class="animar-esquerda">Entre em Contato</h2>
+    <div class="contato-container">
+
+      <!-- Formulário para WhatsApp -->
+      <form class="formulario-contato animar-esquerda" id="form-contato">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <input type="email" id="email" placeholder="Seu e-mail" required>
+        <textarea id="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar para o WhatsApp</button>
+      </form>
+
+      <!-- Informações de contato -->
+      <div class="info-contato animar-direita">
+        <p><strong>WhatsApp:</strong> (99) 99999-9999</p>
+        <p><strong>E-mail:</strong> contato@sualoja.com</p>
+        <p><strong>Endereço:</strong> Rua Exemplo, 123 - Centro</p>
+        <p><strong>Atendimento:</strong> Seg a Sex, das 9h às 18h</p>
+      </div>
+
+      <!-- Mapa do Google Maps -->
+      <div class="mapa-contato animar-direita">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d452702.6412611665!2d-48.79991833520835!3d-27.570597628053136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527394eb2c632d7%3A0x81bc550b6a04c746!2sFlorian%C3%B3polis%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1752201591252!5m2!1spt-BR!2sbr"
+          width="450" height="500" style="border:0; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        SUA LOJA
+      </div>
+
+      <nav class="footer-nav">
+        <a href="#home">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="footer-contato">
+        <p>📞 <a href="https://wa.me/5599999999999" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+        <p>✉️ <a href="mailto:contato@sualoja.com">contato@sualoja.com</a></p>
+      </div>
+
+      <div class="footer-redes">
+        <a href="#" aria-label="Facebook" title="Facebook">Facebook</a>
+        <a href="#" aria-label="Instagram" title="Instagram">Instagram</a>
+        <a href="#" aria-label="Twitter" title="Twitter">Twitter</a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      &copy; 2025 SUA LOJA. Todos os direitos reservados.
+    </div>
+  </footer>
 
 
 
 
-
-
+  <div id="modal-imagem" class="modal">
+    <span class="fechar-modal">&times;</span>
+    <img class="modal-conteudo" id="imagem-ampliada">
+  </div>
 </body>
 
 </html>
